@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: www.kobarax-medical.com
+
+# Sitemaps
+Sitemap: www.kobarax-medical.com/sitemap.xml

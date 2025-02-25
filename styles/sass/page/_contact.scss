@@ -1,0 +1,159 @@
+/* ============================
+31. Contact Page
+ ==============================*/
+
+
+/* contact-page */
+
+.contact-page-section {
+
+	/* map-section */
+	.map {
+		iframe {
+			width: 100%;
+			height: 508px;
+		}
+	}
+
+	.contact-info {
+		h2 {
+			font-size: 35px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
+
+		.contact-info-item {
+			padding: 28px 30px;
+			box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+			position: relative;
+			margin-bottom: 26px;
+
+			&:before {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 63px;
+				height: 5px;
+				content: "";
+				background: $theme-primary-color;
+			}
+
+			h3 {
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				text-transform: capitalize;
+				margin-bottom: 20px;
+				color: $theme-primary-color;
+			}
+
+			p {
+				max-width: 330px;
+				padding-left: 35px;
+				position: relative;
+
+				i {
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+
+}
+
+.contact-page {
+	background: #F9F9F9;
+
+	.contact-area-wrapper {
+		position: relative;
+
+		.contact-form-area {
+			position: relative;
+			z-index: 9;
+			margin: 0 auto;
+			z-index: 1;
+
+			form {
+				max-width: 636px;
+			}
+
+			h2 {
+				font-size: 26px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 36px;
+				text-transform: capitalize;
+				margin-bottom: 20px;
+			}
+			p{
+				margin-bottom: 40px;
+			}
+			.form-control {
+				width: 100%;
+				height: 60px;
+				margin-bottom: 20px;
+				border: 0;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 29px;
+				color: #A5A5A5;
+				border: 1px solid rgba(0, 0, 0, 0.15);
+				background: rgba(0, 0, 0, 0.015);
+
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+
+				&::-webkit-input-placeholder {
+					color: $text-color;
+				}
+
+				&:-ms-input-placeholder {
+					color: $text-color;
+				}
+
+				&::placeholder {
+					color: $text-color;
+				}
+			}
+
+			textarea {
+				&.form-control {
+					height: 202px;
+				}
+			}
+
+			select.form-control {
+				color: $text-color;
+				-webkit-appearance: none;
+				-ms-appearance: none;
+				-o-appearance: none;
+				appearance: none;
+				-moz-appearance: none;
+				background: rgba(0, 0, 0, 0.015) url(/public/images/select-icon2.png) no-repeat calc(100% - 15px) center;
+				position: relative;
+
+				option {
+					border: 0;
+				}
+			}
+
+			.submit-area {
+				margin-top: 20px;
+
+				@media(max-width:991px) {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}

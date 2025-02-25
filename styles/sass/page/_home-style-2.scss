@@ -1,0 +1,692 @@
+/*--------------------------------------------------------------
+21. Home-style-2
+--------------------------------------------------------------*/
+
+/* featured-section.style-2 */
+
+.featured-section.style-2 {
+	.featured-category-wrap {
+		.featured-item {
+			margin-bottom: 24px;
+		}
+	}
+
+	.category-banner {
+		@media(max-width:991px) {
+			margin-top: 50px;
+		}
+
+		@media(max-width:575px) {
+			margin-top: 20px;
+		}
+
+		.offer-banner-item .text {
+			padding: 25px 20px;
+		}
+
+		.offer-banner-item.red-banner .offer-image {
+			margin-top: -36px;
+		}
+	}
+
+	.offer-banner-item.green-card {
+		border-radius: 5px;
+		background: #00BCD4;
+		padding: 0px 40px;
+		justify-content: space-between;
+
+		@media(max-width:575px) {
+			padding: 0px 0px;
+		}
+
+		.text {
+			max-width: 340px;
+		}
+	}
+
+	.offer-banner-item.yellow-banner {
+		margin-bottom: 0;
+
+		.text {
+			padding: 42px 30px;
+
+			@media(max-width:1399px) {
+				padding: 35px 15px;
+			}
+		}
+	}
+}
+
+.view-btn {
+	text-align: right;
+
+	@media(max-width:991px) {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	a {
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-decoration-line: underline;
+		text-transform: capitalize;
+		font-family: $heading-font;
+		color: $text-color;
+
+		&:hover {
+			color: $theme-primary-color;
+		}
+	}
+}
+
+/*==================================
+ 05. cta-banner-section-s2 
+ ==================================*/
+
+.cta-banner-section-s2 {
+	background: $theme-primary-color;
+	position: relative;
+	z-index: 1;
+	padding: 80px 0;
+
+	.hand-img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+
+		@media(max-width:1399px) {
+			max-width: 600px;
+		}
+
+		@media(max-width:991px) {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.cta-banner-img {
+		position: absolute;
+		left: 50px;
+		bottom: 0;
+
+		@media(max-width:1399px) {
+			max-width: 400px;
+			left: 20px;
+		}
+
+		@media(max-width:991px) {
+			display: none;
+		}
+	}
+
+	.animate-shape {
+		position: absolute;
+		right: 12%;
+		top: 50px;
+		z-index: -11;
+		animation: bounceLeftToRight 4s infinite;
+
+		@media(max-width:991px) {
+			opacity: .5;
+		}
+	}
+
+
+	.cta-banner-text {
+		padding: 120px 0;
+		padding-left: 80px;
+		position: relative;
+		z-index: 11;
+
+		@media(max-width:1399px) {
+			padding-top: 0;
+		}
+
+		@media(max-width:991px) {
+			text-align: center;
+			padding: 0;
+		}
+
+		span {
+			border-radius: 0;
+		}
+
+		h3 {
+			font-size: 45px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			text-transform: capitalize;
+			color: $white;
+
+			@media(max-width:991px) {
+				font-size: 35px;
+			}
+		}
+
+		p {
+			color: $white;
+			margin-bottom: 20px;
+			max-width: 470px;
+			margin-top: 15px;
+
+			@media(max-width:991px) {
+				margin: 20px auto;
+			}
+		}
+	}
+
+	&:after {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		z-index: -1;
+		background: url(/images/cta/cta-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+/*==================================
+ 05. deal-product-section style-2
+ ==================================*/
+
+.deal-product-section.style-2 {
+	background: $white;
+	padding-top: 120px;
+
+	&::before {
+		display: none;
+	}
+
+	.deal-left {
+		background: $theme-primary-color2;
+		padding: 88px 40px;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+
+		@media(max-width:1399px) {
+			min-height: 638px;
+		}
+
+		@media(max-width:1199px) {
+			padding: 95px 15px
+		}
+
+		@media(max-width:991px) {
+			min-height: 100%;
+			padding: 50px 15px;
+			margin-bottom: 30px;
+		}
+
+		.deal-img {
+			flex-basis: 55%;
+		}
+
+		.deal-text {
+			flex-basis: 60%;
+			padding-top: 50px;
+
+			@media(max-width:991px) {
+				padding-top: 0;
+			}
+
+			h3 {
+				font-size: 45px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				text-transform: capitalize;
+				color: $white;
+				margin-bottom: 20px;
+
+				@media(max-width:1199px) {
+					font-size: 35px;
+				}
+
+				@media(max-width:575px) {
+					font-size: 25px;
+				}
+			}
+
+			b {
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				color: $white;
+				margin-bottom: 15px;
+				display: block;
+
+				@media(max-width:575px) {
+					font-size: 18px;
+				}
+			}
+
+			p {
+				max-width: 165px;
+				color: $white;
+			}
+		}
+
+		.round-shape-1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.round-shape-2 {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.deal-wrap {
+		.deal-item {
+			border: 1px solid $border-color-s2;
+			border-radius: 5px;
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.deal-product-section.style-3 {
+	background: $white;
+
+	&::before {
+		display: none;
+	}
+
+	@media(max-width:991px){
+		padding-bottom: 90px;
+	}
+
+	.deal-wrap {
+		.deal-item {
+			border: 1px solid $border-color-s2;
+			border-radius: 5px;
+
+			@media(max-width:991px){
+				margin-bottom: 30px;
+			}
+		}
+
+		.col {
+			&:last-child {
+				.deal-item { 
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+}
+
+
+/*==================================
+ 05. hot-deal-section
+ ==================================*/
+
+.hot-deal-section {
+	background: $section-bg-color;
+
+	.hot-deal-wrap {
+		.row {
+			@media (max-width:1199px) {
+				align-items: flex-end;
+			}
+		}
+
+	}
+
+	.hot-deal-left {
+		position: relative;
+		z-index: 1;
+
+		@media(max-width:991px) {
+			text-align: center;
+		}
+
+		.inner-shape {
+			position: absolute;
+			top: 50px;
+			z-index: -1;
+			width: 100%;
+			left: -10%;
+			animation: zoom-in-zoom-out 5s ease infinite;
+			max-width: 611px;
+
+			@media(max-width:991px) {
+				text-align: center;
+				left: 0;
+			}
+		}
+	}
+
+	.hot-deal-right {
+		.horizontal-product-item {
+			background: $white;
+
+			h2 {
+				margin-bottom: 5px;
+
+				a {
+
+					@media (max-width:1199px) {
+						font-size: 16px;
+					}
+				}
+
+				&:hover {
+					a {
+						color: $theme-primary-color;
+					}
+				}
+			}
+		}
+
+		.offer-banner-item {
+			align-items: flex-end;
+
+			&:after {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				content: "";
+				z-index: -1;
+				background: url(/images/deal/vector2.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+.hot-deal-title {
+	border-bottom: 1px solid $border-color-s2;
+	margin-bottom: 60px;
+	padding-bottom: 40px;
+	position: relative;
+
+	.heading-title {
+		margin-bottom: 0;
+	}
+
+	&:before {
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		content: "";
+		width: 110px;
+		height: 1px;
+		background: $theme-primary-color2;
+
+
+		@media(max-width:991px) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.deal-countdown {
+
+	.react-countdown {
+		display: flex;
+		justify-content: flex-end;
+
+		@media(max-width:991px) {
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		.time-section {
+			padding: 0 30px;
+			position: relative;
+			text-align: center;
+
+			@media(max-width:1199px) {
+				padding: 0 20px;
+			}
+
+			&::after {
+				position: absolute;
+				right: 0;
+				top: -10px;
+				content: ":";
+				font-size: 30px;
+				color: $theme-primary-color;
+			}
+
+			&:last-child {
+				padding-right: 0;
+
+				&::after {
+					display: none;
+				}
+			}
+
+		}
+
+		.time {
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 29px;
+			color: $theme-primary-color;
+
+			@media(max-width:1199px) {
+				font-size: 20px;
+			}
+		}
+
+		.time-text {
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 29px;
+		}
+	}
+}
+
+/*==================================
+ 05. partners-section style-2
+ ==================================*/
+.partners-section.style-2 {
+	padding-top: 80px;
+
+	.grid {
+		border: 0;
+		height: auto;
+	}
+}
+
+/*==================================
+ 05. top-selling-section
+ ==================================*/
+
+.top-selling-section {
+	.product-item {
+		background: #F9F9F9;
+		margin-bottom: 0;
+
+		.product-image {
+			border: 0;
+		}
+
+		.product-info {
+			padding: 15px;
+			padding-top: 0;
+
+			.price {
+				border: 0;
+				padding-bottom: 0;
+				padding-top: 12px;
+			}
+		}
+	}
+
+	.top-selling-active{
+		@media(max-width:991px) {
+			padding-bottom: 30px;
+		}
+	}
+
+	.slick-slider {
+		margin: -10px;
+
+		.slick-slide {
+			padding: 10px;
+		}
+	}
+
+
+	// slider controls
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		top: -90px;
+		right: 0;
+		@include translatingY();
+		width: 25px;
+		height: 25px;
+		line-height: 31px;
+		transition: all .3s;
+		border-radius: 5px;
+		border: 0;
+		background: $white;
+		z-index: 1;
+		font-size: 0;
+		border-radius: 50%;
+		box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+
+		&:hover {
+			background: $theme-primary-color2;
+			color: $white;
+		}
+
+		@media(max-width:991px) {
+			display: none;
+		}
+	}
+
+	.slick-prev {
+		right: 35px;
+		left: auto;
+
+		&:before {
+			font-family: "icomoon";
+			content: "\e931";
+			opacity: 1;
+			font-size: 8px;
+			color: $text-color;
+		}
+	}
+
+	.slick-next {
+		@include media-query(767px) {
+			display: none !important;
+		}
+
+		&:before {
+			font-family: "icomoon";
+			content: "\e932";
+			opacity: 1;
+			font-size: 8px;
+			color: $text-color;
+		}
+	}
+
+
+	.slick-prev {
+		&:hover {
+			&:before {
+				color: $white;
+			}
+		}
+	}
+
+	.slick-next {
+		&:hover {
+			&:before {
+				color: $white;
+			}
+		}
+	}
+
+
+	.slick-dots {
+		text-align: center;
+
+		li {
+			width: unset;
+			height: unset;
+
+			button {
+				border: none;
+				margin: 0 5px;
+				width: 10px;
+				height: 8px;
+				border-radius: 10px;
+				background: #d4e6f5;
+
+				&::before {
+					display: none;
+				}
+
+			}
+
+			&.slick-active {
+				button {
+					background: $theme-primary-color;
+					width: 25px;
+				}
+			}
+		}
+
+	}
+}
+
+
+/*==================================
+ 05. blog-section-s2
+ ==================================*/
+
+.blog-section-s2 {
+	background: $white;
+
+	.blog-items {
+		.blog-item {
+			background: $section-bg-color-s2;
+		}
+	}
+}

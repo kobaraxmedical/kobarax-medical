@@ -1,0 +1,94 @@
+/* =============================
+33. Auth-page
+ ===============================*/
+
+/* login-area */
+
+.login-area {
+	.contact-form-wrap {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+
+	.heading-title {
+		h2 {
+			justify-content: flex-start;
+		}
+	}
+
+	.contact-form {
+		padding: 40px;
+		border: 1px solid $border-color-s2;
+
+		@media(max-width:575px){
+			padding: 20px;
+		}
+
+		label {
+			font-family: $heading-font;
+			font-size: 26px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 36px;
+			text-transform: capitalize;
+			color: $dark-gray;
+			margin-bottom: 10px;
+
+			@media(max-width:991px){
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+
+		.form-field input {
+			width: 100%;
+			margin-bottom: 25px;
+			padding-left: 10px;
+			height: 65px;
+			border-radius: 5px;
+			border: none;
+			background: #F2F2F2;
+
+			@media(max-width:575px){
+				height: 50px
+			}
+
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+
+
+		.input-box {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+
+			input {
+				width: 20px;
+				margin-bottom: 0;
+			}
+
+			label {
+				color: #676B79;
+				font-weight: 500;
+				font-size: 16px;
+				padding-left: 10px !important;
+				margin-bottom: 0;
+				font-family: $base-font;
+			}
+		}
+
+		.forgot {
+			display: block;
+			margin-top: 20px;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			color: $theme-primary-color;
+		}
+	}
+
+}

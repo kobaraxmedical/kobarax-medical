@@ -1,0 +1,89 @@
+/*============================================
+
+   Theme Name: Kobarax Medical - Medical Equipment Store eCommerce Next JS Template
+   Author : Kobarax
+   Author URI: /Kobarax
+   Description: Kobarax Medical - Medical Equipment Store eCommerce Next JS Template
+   Version: 1.0
+
+==============================================*/
+/* CSS Index
+==============================================
+
+    01. Theme Default CSS
+    02. Header Style
+    03. Footer
+    04. Hero
+    05. featured-section
+    06. Animate-marque-sec
+    07. offer-banner-section
+    08. product-section 
+    09. cta-banner-section
+    10. latest-product-section
+    11. cta-banner-section2
+    12. deal-product-section
+    13. best-seller-section
+    14. features-section
+    15. daily-best-sell-section
+    16. partners-section
+    17. Testimonial-section
+    18. cta-banner-section3
+    19. Blog-section
+    20. offer-features-area
+    21. Home-style-2
+    22. Home-style-3
+    23. About Page
+    24. Shop-Page
+    25. Shop-Single
+    26. cart-page-style
+    27. Checkout-page
+    28. compare-section
+    29. Blog Page
+    30. Blog Single Page
+    31. Contact Page
+    32. 404 page
+    33. Auth-page
+
+==============================================*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/about";
+@import "page/shop";
+@import "page/shop-single";
+@import "page/cart";
+@import "page/checkout";
+@import "page/compare";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/contact";
+@import "page/404";
+@import "page/auth";

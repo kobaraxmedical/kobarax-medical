@@ -1,0 +1,129 @@
+/*===============================
+28. compare-section
+================================*/
+
+.compare-section {
+
+	.comapare-wrap {
+		background: #F9F9F9;
+	}
+
+    .comapare-wrap {
+        border-color: inherit;
+        border-width: 0;
+		margin-bottom: 0;
+
+		thead {
+			tr {
+				border-bottom: 1px solid $border-color!important;
+				td {
+					border-right: 0!important;
+				}
+			}
+		}
+
+        tr {
+            border-bottom: 1px solid $border-color;
+
+			&:last-child {
+				border: 0;
+			}
+
+			th {
+				border-right: 1px solid $border-color;	
+				font-size: 16px;
+				font-weight: 600;
+				border-bottom: 0;
+			}
+
+
+			
+            td {
+                border: 0;
+                padding: 30px;
+                min-width: 200px;
+                font-weight: 400;
+                font-size: 18px;
+                color: #6F6F6F;
+				vertical-align: middle;
+				border-right: 1px solid $border-color;
+
+                &:last-child {
+                    border-right: 0;
+                }
+
+                &.text-title {
+                    font-weight: 400;
+                    color: $text-color;
+                    font-family: $base-font;
+                    font-size: 18px;
+                }
+
+				p {
+					text-align: left;
+				}
+
+				img {
+					max-width: 150px;
+				}
+
+				h5 {
+					a{
+						color: $dark-gray;
+
+						&:hover {
+							color: $theme-primary-color2;
+						}
+					}
+				}
+
+            }
+        }
+    }
+
+
+	.cmpProdThumb {
+		button {
+			color: #F00;
+			display: block;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 29px;
+			i {
+				margin-right: 3px;
+			}
+		}
+	}
+
+
+	.ratingBack  {
+		display: flex;
+
+		li {
+			i {
+				color: #FED542;
+			}
+		}
+	}
+
+	.not-found {
+		text-align: center;
+
+		i {
+			font-size: 100px;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			border-radius: 50%;
+			border: 3px solid #5d666f;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+
+		.noProdFound {
+			font-size: 20px;
+		}
+	}
+}

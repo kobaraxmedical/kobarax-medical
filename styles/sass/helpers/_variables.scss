@@ -1,0 +1,40 @@
+/*=========================================
+ 01. Theme Default CSS  
+ ==========================================*/
+
+/*---------------------------
+	Fonts
+----------------------------*/
+
+
+// fonts
+$base-font-size: 15;
+$base-font: "Rubik", sans-serif;
+$heading-font: 'Cormorant';
+
+
+
+// color
+$dark-gray: #1C263A;
+$body-color: #5D666F;
+$white: #fff;
+$light: #8188a9;
+$black: #000;
+$small-black: #333;
+$cyan: #848892;
+
+$theme-primary-color: #1e6c92;
+$theme-primary-color2: #F3A952;
+$theme-primary-color3: #EC2526;
+$body-bg-color: #fff;
+$section-bg-color: #ECF3F7;
+$section-bg-color-s2: #F9F9F9;
+$section-bg-color-s3: #DFF8FF;
+$section-bg-color-s4: #F5F5F5;
+$text-color: #707070;
+$text-light-color: #7b7b7b;
+$heading-color: $dark-gray;
+$heading-color2: #3F3F3F;
+$border-color: rgba(93, 102, 111, 0.15);
+$border-color-s2: #E9ECEF;
+$theme-gradient: linear-gradient(90deg, #F3A952 0%, #1e6c92 82.79%);

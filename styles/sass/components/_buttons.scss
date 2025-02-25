@@ -1,0 +1,168 @@
+.btn-style-1,
+.btn-style-2,
+.small-btn-style {
+	-webkit-backface-visibility: hidden;
+	background: $theme-primary-color;
+	border: 0;
+	border-radius: 30px;
+	color: #1a1729;
+	display: inline-block;
+	font-family: $heading-font;
+	font-size: 18px;
+	font-weight: 500;
+	font-weight: 600;
+	padding: 15px 35px;
+	padding-right: 70px;
+	position: relative;
+	text-transform: capitalize;
+	z-index: 1;
+	color: $white;
+	overflow: hidden;
+
+	&:before {
+		background: #fff;
+		border-radius: 30px;
+		content: "\e932";
+		font-family: 'icomoon';
+		height: 46px;
+		line-height: 46px;
+		position: absolute;
+		right: 5px;
+		text-align: center;
+		top: 5px;
+		width: 46px;
+		color: $dark-gray;
+		font-size: 12px;
+	}
+
+	&:after {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 100%;
+		width: 0px;
+		z-index: -1;
+		content: "";
+		border-radius: 100px;
+		background: darken($theme-primary-color, 8);
+		transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+	}
+
+	&.btn-style-1-s3 {
+		width: 100%;
+		height: 100%;
+		background: $white;
+		color: $theme-primary-color;
+
+		&:after {
+			border: 1px solid $white;
+		}
+	}
+
+	&.btn-style-1-s4 {
+		background: $theme-primary-color;
+		color: $white;
+
+		&:after {
+			border: 1px solid $theme-primary-color;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white;
+
+		&:after {
+			left: 0%;
+			right: auto;
+			width: 100%;
+		}
+	}
+
+	&:hover:after {
+		opacity: 1;
+	}
+
+	@include media-query(991px) {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+	}
+
+	@include media-query(767px) {
+		padding: 10px 18px;
+		padding-right: 40px;
+		font-size: 14px;
+
+		&:before {
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			font-size: 7px;
+			right: 10px;
+			top: 10px;
+		}
+	}
+}
+
+.btn-style-2 {
+	background: $white;
+	border-color: $dark-gray;
+	color: $dark-gray;
+
+
+	&:before {
+		background-color: $theme-primary-color;
+		color: $white;
+	}
+
+	&:hover {
+		color: $dark-gray;
+	}
+}
+
+.small-btn-style {
+	padding: 5px 12px;
+	font-size: 14px;
+	padding-right: 35px;
+	background: $white;
+	border-color: $dark-gray;
+	color: $dark-gray;
+
+	&:before {
+		background-color: $theme-primary-color;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		color: $white;
+		font-size: 7px;
+
+		@include media-query(767px) {
+			top: 6px;
+			right: 6px;
+		}
+	}
+
+	&:hover {
+		color: $dark-gray;
+
+		&:after {
+			background: darken($white, 8);
+		}
+	}
+
+	&.primary {
+		background: $theme-primary-color;
+		color: $white;
+
+		&:before {
+			background-color: $white;
+			color: $dark-gray;
+		}
+
+		&:after {
+			background: darken($theme-primary-color, 8);
+		}
+
+	}
+}

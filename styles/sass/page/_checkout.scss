@@ -1,0 +1,351 @@
+/* =============================
+27. Checkout-page
+ ===============================*/
+
+/* checkout-area */
+.checkout-area {
+
+	.caupon-area {
+		margin-bottom: 80px;
+
+		.coupon-box {
+			background: #F2F2F2;
+			padding: 20px;
+
+			p {
+				margin-bottom: 0;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 29px;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+
+				i {
+					color: $theme-primary-color;
+					margin-right: 10px;
+				}
+
+				span {
+					display: inline-block;
+					color: $theme-primary-color;
+					margin-left: 10px;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.coupon-form p {
+			margin-bottom: 15px;
+			color: $text-light-color;
+		}
+
+		.coupon-form {
+			padding: 20px;
+		}
+
+		.coupon-form span {
+			margin-bottom: 20px;
+			display: block;
+			color: $text-light-color;
+		}
+
+		.input-wrap {
+			position: relative;
+		}
+
+		.coupon-form input {
+			width: 100%;
+			height: 50px;
+			border: 1px solid #ebebeb;
+			padding-left: 20px;
+			border-radius: 0;
+		}
+
+		.coupon-form input:focus {
+			outline: none;
+			box-shadow: none;
+		}
+
+		.coupon-form button {
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 50px;
+			background: $theme-primary-color;
+			color: #fff;
+			width: 108px;
+			border: none;
+			outline: none;
+			box-shadow: none;
+			cursor: pointer;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	.biling-item {
+		.billing-adress {
+
+			label {
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 29px;
+				color: $dark-gray;
+				margin-bottom: 5px;
+			}
+
+			.form-style input,
+			.form-style select {
+				width: 100%;
+				margin-bottom: 25px;
+				padding-left: 10px;
+				height: 50px;
+				border-radius: 5px;
+				border: none;
+				background: #F2F2F2;
+
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+			}
+
+			.form-style select {
+				-webkit-appearance: none;
+				-ms-appearance: none;
+				-o-appearance: none;
+				appearance: none;
+				-moz-appearance: none;
+				background: #F2F2F2 url(/public/images/select-icon2.png) no-repeat calc(100% - 15px) center;
+				position: relative;
+			}
+		}
+
+	}
+
+	.note-area {
+		margin-bottom: 50px;
+
+		label {
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 29px;
+			color: $dark-gray;
+			margin-bottom: 5px;
+		}
+
+		textarea {
+			background: #F2F2F2;
+			width: 100%;
+			border: 0;
+			padding: 15px;
+			height: 256px;
+		}
+	}
+
+	.checkout-order-area {
+		border: 1px solid rgba(0, 0, 0, 0.10);
+		background: #F6F6F6;
+		padding: 40px;
+
+		@media(max-width:575px){
+			padding: 20px;
+		}
+
+		h3 {
+			font-size: 35px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			text-transform: capitalize;
+			padding-bottom: 15px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.oreder-item {
+
+		.title {
+			padding-bottom: 10px;
+
+			&.bg-title {
+				padding: 30px;
+				background: #EBEBEB;
+			}
+
+			h2 {
+				font-family: $base-font;
+				font-weight: 500;
+				font-size: 16px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 0;
+			}
+
+			&.s1 {
+				border-bottom: 1px solid $border-color;
+				padding-bottom: 25px;
+				padding-top: 25px;
+				margin-bottom: 20px;
+
+				h2 {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.oreder-product {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid #D9D9D9;
+			padding: 20px 0;
+
+			.images {
+				img {
+					width: 60px;
+				}
+			}
+
+			.product {
+
+				ul {
+
+					.first-cart {
+						font-family: $base-font;
+						font-weight: 600;
+						font-size: 16px;
+						line-height: 23px;
+						color: #233D50;
+					}
+
+				}
+			}
+
+			span {
+				font-weight: 500;
+				font-size: 16px;
+				color: #233D50;
+			}
+		}
+	}
+
+	.payment-option {
+		margin-top: 30px;
+
+		h3 {
+			margin-bottom: 20px;
+			padding-bottom: 0px;
+		}
+
+		.payment-select ul li {
+			margin-right: 10px;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 29px;
+			font-weight: 500;
+			color: #5B5B5B;
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+
+			input {
+				background: transparent;
+				border-radius: 100%;
+				height: 16px;
+				width: 16px;
+				appearance: none;
+				-webkit-appearance: none;
+				border: 3px solid #FFF;
+				box-shadow: 0 0 0 1px $text-color;
+				margin-right: 10px;
+			}
+
+			input:checked {
+				background: $text-color;
+			}
+		}
+
+		.payment-bottom {
+			padding-top: 20px;
+			border-top: 1px solid #D9D9D9;
+			margin-top: 40px;
+		}
+
+		.payment-btn {
+			text-align: right;
+			margin-top: 20px;
+		}
+	}
+
+}
+
+// order-recived
+.cart-recived-section{
+
+    .order-box {
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0px 5px 15px 0px rgba(62, 65, 159, 0.1);
+    }
+    .order-top{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;
+       padding-top: 40px;
+       border-bottom: 1px solid #ebebeb;
+       flex-wrap: wrap;
+
+       @media(max-width:767px){
+         padding: 20px;
+       }
+
+       h2{
+           span{
+               display: block;
+               font-size: 18px;
+               color: #888;
+               margin-top: 10px;
+               font-weight: 500;
+               margin-bottom: 10px;
+           }
+       }
+
+    }
+    .cartStatus{
+         padding: 40px;
+        
+         @media(max-width:767px){
+         padding: 20px;
+         }
+
+         .cartTotals{
+             img{
+                 width: 80px;
+                 height: 80px;
+                 object-fit: cover;
+                 margin-right: 10px;
+             }
+             tr{
+                 &:last-child{
+                     td{
+                         border-bottom: 0;
+       
+                     }
+                 }
+             }
+         }
+
+         .MuiTableCell-body{
+          padding-left: 0;
+
+         }
+    }
+}

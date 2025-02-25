@@ -1,0 +1,145 @@
+/* ======================================
+23. About Page  
+========================================*/
+
+/* about-page */
+
+.about-page {
+
+	.about-section {
+		.about-img-wrap {
+			position: relative;
+			padding-right: 60px;
+			padding-bottom: 120px;
+			margin-right: 60px;
+
+			@media(max-width:575px) {
+				padding-right: 20px;
+				padding-bottom: 50px;
+				margin-right: 0;
+			}
+
+			.about-img-bottom {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+
+				@media(max-width:575px) {
+					max-width: 200px;
+				}
+			}
+		}
+
+		.about-text {
+
+			@media(max-width:991px) {
+				margin-top: 30px;
+				text-align: center;
+			}
+
+			h2 {
+				font-size: 45px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				text-transform: capitalize;
+				margin-top: 10px;
+				margin-bottom: 30px;
+
+				@media(max-width:1399px) {
+					font-size: 34px;
+					margin-bottom: 20px;
+				}
+			}
+
+			p {
+				margin-bottom: 30px;
+
+				@media(max-width:1399px) {
+					margin-bottom: 20px;
+				}
+
+				@media(max-width:991px) {
+					margin: 0 auto;
+				}
+			}
+
+			.about-features {
+				h3 {
+					font-size: 26px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 36px;
+					text-transform: capitalize;
+
+				}
+
+				p {
+					max-width: 280px;
+				}
+
+				i {
+					color: $theme-primary-color2;
+					font-size: 50px;
+				}
+			}
+		}
+	}
+
+	.testimonial-section {
+		background: $section-bg-color;
+	}
+
+	.about-history-section {
+		.history-top {
+			margin-bottom: 30px;
+
+			@media(max-width:991px) {
+				text-align: center;
+			}
+		}
+		
+		.history-wrap {
+
+			@media(max-width:991px) {
+				text-align: center;
+			}
+
+			.history-item {
+				margin-bottom: 40px;
+				
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				h3 {
+					font-size: 26px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 36px;
+					text-transform: capitalize;
+					display: flex;
+					align-items: center;
+					margin-bottom: 20px;
+
+					@media(max-width:991px) {
+						justify-content: center;
+					}
+
+					i {
+						color: $theme-primary-color;
+						margin-right: 10px;
+						font-size: 30px;
+					}
+				}
+			}
+
+			.history-img {
+				@media(max-width:991px) {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+}

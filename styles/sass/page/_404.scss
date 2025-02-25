@@ -1,0 +1,45 @@
+/* =============================
+32. 404 page
+ ===============================*/
+
+/* 404-section */
+
+.opps-404-section {
+	text-align: center;
+
+	.opps-message {
+		margin-top: 70px;
+		padding: 0 200px;
+
+		@include media-query(991px) {
+			margin-top: 50px;
+			padding: 0 100px;
+		}
+
+		@include media-query(767px) {
+			padding: 0;
+		}
+
+		h3 {
+			font-size: 70px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 80px;
+			text-transform: capitalize;
+			margin: 0 0 0.4em;
+
+			@include media-query(1199px) {
+				font-size: 50px;
+			}
+			@include media-query(575px) {
+				font-size: 30px;
+				line-height: 55px;
+			}
+		}
+
+		p {
+			margin-bottom: 1.8em;
+		}
+	}
+
+}

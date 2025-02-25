@@ -32,7 +32,7 @@ const FooterS2 = (props) => {
                             <div className="contact-ft">
                                 <ul>
                                     <li><i><Image src={mail} alt="" /></i>Email:
-                                        info@kobarax-medical.com</li>
+                                        info@kobarax.com</li>
                                     <li><i className="icon-contact"></i>Fix : +221-32-824-64-86 / 
                                     <br />
                                     Mobile: +221-78-897-30-14</li>

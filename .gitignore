@@ -45,3 +45,4 @@ studio/.env.development
 
 # Local Netlify folder
 .netlify
+dist
